@@ -20,13 +20,14 @@ var soldier = {
 	name: "David Clark",
 	age: 24,
 	rank: "Corporal",
+	duty: true
 	qualifications: [
 		"Expert Marksman",
 		"Targets hit:" + 38 + " out of " + 40,
 		"Demolition Qualified = " + true
 	],
 	giveReport: function () {
-		if (soldier.rank === "Corporal") {
+		if (soldier.duty === true) {
 		return goodReport;
 		} else {
 		return badReport;
