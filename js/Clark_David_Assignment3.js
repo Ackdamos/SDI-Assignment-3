@@ -24,7 +24,11 @@ var soldier = {
 		"Demolition Qualified = " + true
 	],
 	giveReport: function () {
+		if (soldier.rank === "Corporal") {
 		console.log("Everything is good to go!");
+		} else {
+		console.log("Man, your jacked up soldier!");
+		}
 	}
 	
 };
