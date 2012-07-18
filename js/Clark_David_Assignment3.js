@@ -13,3 +13,16 @@ var tempString = "This is just temporary.",
 		"Here"
 	]
 ;
+
+var soldier = {
+	name: "David Clark",
+	age: 24,
+	rank: "Corporal",
+	qualifications: [
+		"Expert Marksman",
+		"Targets hit:" + 38 + " out of " + 40,
+		"Demolition Qualified = " + true
+	],
+	
+	
+};
