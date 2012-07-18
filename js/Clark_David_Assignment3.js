@@ -5,6 +5,8 @@
 */
 
 var tempString = "This is just temporary.",
+	goodReport = "Keep up the good work soldier!",
+	badReport = "Your all kinds of messed up!"
 	tempNumber = 11,
 	tempArray = [
 		"Temporary",
@@ -25,10 +27,13 @@ var soldier = {
 	],
 	giveReport: function () {
 		if (soldier.rank === "Corporal") {
-		console.log("Everything is good to go!");
+		return goodReport;
 		} else {
-		console.log("Man, your jacked up soldier!");
+		return badReport;
 		}
 	}
 	
 };
+
+var report = soldier.giveReport();
+console.log(report);
