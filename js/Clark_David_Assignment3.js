@@ -23,6 +23,8 @@ var soldier = {
 		"Targets hit:" + 38 + " out of " + 40,
 		"Demolition Qualified = " + true
 	],
-	
+	giveReport: function () {
+		console.log("Everything is good to go!");
+	}
 	
 };
