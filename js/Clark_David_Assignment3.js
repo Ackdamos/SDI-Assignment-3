@@ -4,6 +4,8 @@
    Placeholder text for now.
 */
 
+// Nested Loop is a loop inside of a loop.
+
 var tempString = "This is just temporary.",
 	goodReport = "Keep up the good work soldier!",
 	badReport = "Your all kinds of messed up!"
@@ -41,3 +43,8 @@ console.log(report);
 
 soldier.deployed = false;
 console.log(soldier);
+
+var key = "name";
+for (var key in soldier) {
+	console.log(key + " = " + soldier[key]);
+}
