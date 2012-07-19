@@ -8,13 +8,13 @@
 
 var tempString = "This is just temporary.",
 	goodReport = "Keep up the good work soldier!",
-	badReport = "Your all kinds of messed up!"
+	badReport = "Your all kinds of messed up!",
 	weaponCount = 20,
-	tempArray = [
-		"Temporary",
-		"Array",
-		"Placeholders",
-		"Here"
+	platoonSquads = [
+		"Squad 1",
+		"Squad 2",
+		"Squad 3",
+		"Squad 4"
 	]
 ;
 
@@ -60,11 +60,17 @@ var officer = {
 		weaponCount--;
 		}
 		console.log("All weapons are accounted for.");
+	
+	createSquad: function () {
+		var squadCount = platoonSquads.length;
+		platoonSquads.push ("Squad 5");
+		for (var i = 0; i < platoonSquads.length; i++) {
+		return platoonSquads;
+		}
 	}
 };
 
 var goLeader = officer.countWeapons();
 
-// for (var i = 0; i <= 20; i++) {
-//		console.log("You " + i + " soldiers are platoon 1.");
-//		} 
+var showSquads = soldier.createSquad(1, platoonSquads);
+console.log(platoonSquads);
