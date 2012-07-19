@@ -20,7 +20,7 @@ var soldier = {
 	name: "David Clark",
 	age: 24,
 	rank: "Corporal",
-	duty: true
+	duty: true,
 	qualifications: [
 		"Expert Marksman",
 		"Targets hit:" + 38 + " out of " + 40,
@@ -38,3 +38,6 @@ var soldier = {
 
 var report = soldier.giveReport();
 console.log(report);
+
+soldier.deployed = false;
+console.log(soldier);
