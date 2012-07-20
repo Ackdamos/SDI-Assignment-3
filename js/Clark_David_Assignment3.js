@@ -76,3 +76,4 @@ var createSquad = function () {
 var showSquads = createSquad(1, platoonSquads);
 console.log(showSquads);
 
+console.log(goodReport, platoonSquads);
