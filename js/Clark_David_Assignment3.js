@@ -60,17 +60,19 @@ var officer = {
 		weaponCount--;
 		}
 		console.log("All weapons are accounted for.");
-	
-	createSquad: function () {
-		var squadCount = platoonSquads.length;
-		platoonSquads.push ("Squad 5");
-		for (var i = 0; i < platoonSquads.length; i++) {
-		return platoonSquads;
-		}
 	}
 };
 
 var goLeader = officer.countWeapons();
 
-var showSquads = soldier.createSquad(1, platoonSquads);
-console.log(platoonSquads);
+var createSquad = function () {
+		var squadCount = platoonSquads.length;
+		platoonSquads.push ("Squad 5");
+		for (var i = 0; i < platoonSquads.length; i++) {
+		return platoonSquads;
+		}
+};
+
+var showSquads = createSquad(1, platoonSquads);
+console.log(showSquads);
+
